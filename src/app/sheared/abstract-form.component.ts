@@ -78,6 +78,8 @@ export abstract class AbstractFormComponent<T extends AbstractModel> implements 
       },
       error => {
         this.errors = error;
+        console.log(error);
+        alert(error);
       }
     );
   }

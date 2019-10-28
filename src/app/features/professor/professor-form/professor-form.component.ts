@@ -29,7 +29,9 @@ export class ProfessorFormComponent extends AbstractFormComponent<Professor> imp
   protected buildResourceForm() {
     this.resourceForm = this.formBuilder.group({
       id: null,
-      name: ['', [Validators.required, Validators.maxLength(150)]]
+      name: ['', [Validators.required,
+                  Validators.minLength(6),
+                  Validators.maxLength(80)]]
     });
   }
 

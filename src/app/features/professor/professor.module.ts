@@ -1,3 +1,4 @@
+import { FieldErrorComponent } from './../../sheared/components/field-error.component';
 import { SharedModule } from './../../sheared/shared.module';
 import { ProfessorRoutingModule } from './professor-routing.module';
 import { ProfessorFormComponent } from './professor-form/professor-form.component';
@@ -13,7 +14,6 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-
 
     SharedModule,
     ProfessorRoutingModule,
