@@ -20,7 +20,7 @@
           <div class="box-footer">
             <div class="text-center">
               <button [routerLink]="['/professor']" routerLinkActive="router-link-active" type="button" class="btn btn-flat bg-maroon margin fa fa-close"> Voltar</button>
-              <button type="submit" class="btn btn-flat bg-olive margin fa fa-save"> Save</button>
+              <button [disabled]="resourceForm.invalid" type="submit" class="btn btn-flat bg-olive margin fa fa-save"> Save</button>
             </div>
           </div><!--/.form-box-footer-->
 

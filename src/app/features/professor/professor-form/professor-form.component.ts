@@ -18,8 +18,8 @@ export class ProfessorFormComponent extends AbstractFormComponent<Professor> imp
   public horaSaida = new Date();
   public dataRetorno = new Date();
   public horaRetorno = new Date();
-  constructor( protected service: ProfessorService, protected injector: Injector) {
-    super( injector, new Professor(), service, Professor.fromJson);
+  constructor(protected service: ProfessorService, protected injector: Injector) {
+    super(injector, new Professor(), service, Professor.fromJson);
   }
 
   ngOnInit() {
@@ -29,7 +29,9 @@ export class ProfessorFormComponent extends AbstractFormComponent<Professor> imp
   protected buildResourceForm() {
     this.resourceForm = this.formBuilder.group({
       id: null,
-      name: ['', [Validators.required, Validators.maxLength(150)]]
+      name: ['', [Validators.required,
+      Validators.maxLength(80),
+        , Validators.minLength(6)]]
     });
   }
 
