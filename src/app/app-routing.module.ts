@@ -9,6 +9,11 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './features/home/home.module#HomeModule'
   },
+  {
+    path: 'professor',
+    loadChildren: './features/professor/professor.module#ProfessorModule',
+    // canActivate: [AuthGuardService]
+  },
 ];
 
 @NgModule({

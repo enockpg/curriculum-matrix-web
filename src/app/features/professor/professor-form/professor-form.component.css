@@ -1,0 +1,9 @@
+.content-wizard {
+  padding-top: 20px;
+  min-height: 485px;
+}
+
+.label-required > span {
+  color: red;
+  padding-top: 20px;
+}

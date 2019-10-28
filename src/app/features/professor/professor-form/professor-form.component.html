@@ -1,0 +1,29 @@
+
+<!-- lllllllll -->
+<div class="col-md-6" style="margin-left:0%">
+    <div class="box box-info">
+      <div class="box-header with-border">
+        <h3 class="box-title">New Porfessor</h3>
+      </div>
+      <form [formGroup]="resourceForm" (submit)="submitForm()" class="container">
+          <div class="box-body">
+            <div class="row container">
+              <div class="col-sm-4 form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" formControlName="name" placeholder="Full name" style="text-transform:uppercase" class="form-control">
+                <!-- <app-field-error [validate-field]="resourceForm.get('name')"></app-field-error> -->
+              </div><!-- /.Placa -->
+            </div>
+
+          </div><!--/.form-box-body-->
+
+          <div class="box-footer">
+            <div class="text-center">
+              <button [routerLink]="['/professor']" routerLinkActive="router-link-active" type="button" class="btn btn-flat bg-maroon margin fa fa-close"> Voltar</button>
+              <button type="submit" class="btn btn-flat bg-olive margin fa fa-save"> Save</button>
+            </div>
+          </div><!--/.form-box-footer-->
+
+        </form><!-- /.form -->
+    </div>
+  </div>
